@@ -11,7 +11,11 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{ include = "main", from = "src" }]
+packages = [
+    {include = "main", from = "src"},
+    {include = "masks", from = "src"},
+    {include = "widget", from = "src"}
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
@@ -30,6 +34,7 @@ lint = [
 disallow_untyped_defs = true
 warn_return_any = true
 exclude = 'venv'
+
 
 [tool.black]
 line-length = 119
