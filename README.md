@@ -7,13 +7,13 @@
 ## Установка:
 
 1. Клонируйте репозиторий:
-
+```
   git clone https://github.com/Tutanhamon-dev/SkyProLessons.git
-
+```
 2. Установите зависимости:
-
+```
   pip install -r requirements.txt
-
+```
 ## Использование:
 
   Функционал в процессе написания. Запуск функций через модуль main.py в директории src
