@@ -6,7 +6,7 @@ from src.masks import get_mask_account, get_mask_card_number
 def mask_account_card(original_text_string: str) -> str:
     """Принимает строку с названим карты и номером или номером счета и возвращает сокрытый номер"""
     original_text_list = original_text_string.split()
-    if len(original_text_list[-1]) < 20:
+    if len(original_text_list[-1]) < 20 and original_text_list[0] != "Счет":
         original_text_list[-1] = get_mask_card_number(original_text_list[-1])
     else:
         original_text_list[-1] = get_mask_account(original_text_list[-1])
