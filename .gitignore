@@ -1,5 +1,5 @@
 .idea/
 .src/__pycache__/
-.tests/
+.tests/__pycache__/
 .venv/
 .mypy_cache/
