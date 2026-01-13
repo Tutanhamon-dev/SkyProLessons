@@ -26,7 +26,7 @@ def filter_by_state(dictionary_list: List[Dict[str, Any]], state: str = "EXECUTE
             return False
         return state_value.upper() == state.upper()
 
-    return [cur_dictionary for cur_dictionary in dictionary_list if key_matches(cur_dictionary)]
+    return [x for x in dictionary_list if key_matches(x)]
 
 
 def sort_by_date(dictionary_list: List[Dict[str, Any]], direction: bool = True) -> List[Dict[str, Any]]:
